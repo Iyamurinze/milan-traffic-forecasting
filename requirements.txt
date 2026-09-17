@@ -1,0 +1,14 @@
+# The notebooks install what they need in their first cell, so this file is only
+# needed to run them outside Google Colab (e.g. a local Jupyter kernel).
+#
+# No NumPy upper bound is required here: unlike a local Intel-Mac environment,
+# Colab ships current TensorFlow builds compiled against NumPy 2.
+numpy>=1.26
+pandas>=2.0
+pyarrow>=14.0
+tensorflow>=2.16
+statsmodels>=0.14
+matplotlib>=3.7
+psutil>=5.9
+tqdm>=4.66
+jupyter>=1.0

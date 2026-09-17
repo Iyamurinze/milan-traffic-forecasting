@@ -1,0 +1,31 @@
+@page { size: A4; margin: 20mm 18mm; @bottom-center { content: counter(page); font-size: 8.5pt; color: #666; } }
+body { font-family: "Charter","Georgia",serif; font-size: 10pt; line-height: 1.45; color: #111; hyphens: auto; text-align: justify; }
+h1 { font-size: 17pt; line-height: 1.2; margin: 0 0 2pt; text-align: left; }
+h2 { font-size: 12pt; margin: 16pt 0 5pt; border-bottom: 0.6pt solid #bbb; padding-bottom: 2pt; text-align: left; page-break-after: avoid; }
+h3 { font-size: 10.5pt; margin: 11pt 0 3pt; text-align: left; page-break-after: avoid; }
+h4 { font-size: 10pt; margin: 9pt 0 2pt; font-style: italic; font-weight: normal; text-align: left; }
+p { margin: 0 0 6pt; }
+.subtitle { font-size: 10.5pt; color: #444; margin-bottom: 1pt; }
+.byline { font-size: 9.5pt; color: #555; margin-bottom: 12pt; }
+.abstract { background: #f6f6f4; border-left: 2.5pt solid #555; padding: 8pt 11pt; margin: 0 0 14pt; font-size: 9.5pt; }
+.abstract h2 { border: none; margin: 0 0 4pt; font-size: 10pt; }
+table { border-collapse: collapse; width: 100%; margin: 7pt 0 9pt; font-size: 8.5pt; page-break-inside: avoid; }
+th, td { border: 0.4pt solid #ccc; padding: 2.5pt 5pt; text-align: right; }
+th { background: #eee; font-weight: bold; text-align: center; }
+td:first-child, th:first-child { text-align: left; }
+caption { caption-side: top; font-size: 8.5pt; font-style: italic; text-align: left; margin-bottom: 3pt; color: #333; }
+figure { margin: 9pt 0; text-align: center; page-break-inside: avoid; }
+figure img { max-width: 100%; height: auto; }
+figcaption { font-size: 8.5pt; font-style: italic; color: #333; margin-top: 3pt; text-align: left; }
+code { font-family: "Menlo","Consolas",monospace; font-size: 8.5pt; background: #f2f2f0; padding: 0 2pt; }
+blockquote { border-left: 2pt solid #999; margin: 7pt 0; padding: 2pt 0 2pt 9pt; color: #333; font-size: 9.5pt; }
+.refs p { text-indent: -16pt; padding-left: 16pt; margin-bottom: 3.5pt; font-size: 9pt; text-align: left; }
+strong { font-weight: bold; }
+.small { font-size: 9pt; }
+hr { border: none; border-top: 0.5pt solid #ccc; margin: 10pt 0; }
+
+/* Appendix figures are reference material, not argument -- render them compactly. */
+.appendix figure { margin: 5pt 0; }
+.appendix figure img { max-width: 78%; }
+.appendix figcaption { font-size: 8pt; }
+h2 + p { margin-top: 2pt; }

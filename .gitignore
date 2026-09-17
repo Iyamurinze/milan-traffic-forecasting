@@ -1,0 +1,26 @@
+# Data — regenerate with scripts/build_dataset.py (19.4 GB raw, never committed)
+data/raw/
+data/interim/
+data/processed/
+*.npy
+*.npz
+*.parquet
+
+# Environment
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Outputs kept selectively: figures/tables are committed, logs are not
+results/logs/
+.DS_Store
+
+# Large prediction archives are regenerable via scripts/run_final.py
+results/tables/final_predictions_*.npz
+
+# The report PDF is a submitted deliverable
+!reports/report.pdf
+
+# Personal working notes — not part of the submission
+docs/
